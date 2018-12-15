@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link rel="stylesheet" href="css/animate.css">
-<link type="text/css" rel="stylesheet" href="css/main.css">
 	<title>Planets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="img/hearts.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="animated fadeIn">
 
-	<h1 class="animated flipInX">Enter A Planets Name</h1>
-	<h1>test</h1>
-	<form>
-	<div class="container">
-		<input type="text" class="form-control" placeholder="" id="planet">
-		<div class="container"><button type="button" class="btn btn-primary btn-lg" onclick="getInfo()">Click Me</button>
+	<h1 class="header">Enter A Planets Name</h1>
+
+	<div class="container-fluid">
+		<div class="text-center">
+			<input type="text" placeholder="PLANET NAME" class="form-control" id="search" autocomplete="off">
+			<button type="reset" id="button" class="btn">SEARCH</button>
 		</div>
-		</div>
-	</form>
+	</div>
 
-
-
-	<div>
-		<h1 id="Planet"></h1>
-		<img src="" id="img">
+	<div id="results">
+		<h1 id="Planet" class="header"></h1>
+		<img src="" id="img" class="">
 		<p id="description"></p>
 		<h1 id="oops"></h1>
-
 	</div>
-<div class='space'></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<div class='space'></div>
+	
+<!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+<script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
